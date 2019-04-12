@@ -10,6 +10,11 @@ import static spark.Spark.*;
 public class WebServer {
 	
 	public static void main(String[] args) {
+		//System.setProperty("java.library.path", "/opt/graalvm-ce-1.0.0-rc15/jre/lib/amd64/libsunec.so");
+		System.setProperty("java.library.path", "/opt/graalvm-ce-1.0.0-rc15/jre/lib/amd64");
+		
+		System.out.println("java.library.path=" + System.getProperty("java.library.path"));
+		
 		secure("localhost.jks", "password", null, null);
 
 		// curl -k https://localhost:4567/hello
