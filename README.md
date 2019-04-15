@@ -13,4 +13,7 @@ docker build . -t demo
 docker run -p "4567:4567" --rm demo
 
 
+## Build native with docker
+
+build.sh
 

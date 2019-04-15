@@ -1,7 +1,7 @@
 FROM oracle/graalvm-ce:1.0.0-rc15
 
 COPY target/ /app
-COPY localhost.jks /app
+COPY localhost.jks /app/
 
 ENV java.library.path=/opt/graalvm-ce-1.0.0-rc15/jre/lib/amd64/libsunec.so
 
